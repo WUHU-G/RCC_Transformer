@@ -29,9 +29,7 @@ We also addressed the issue of poor model performance when both instructions and
 <img src=figures/memory_size.png alt="" width="800">
 
 
-| Model                   |            Type             |       Data       |         Required Original Model<sup>[1]</sup>          | Size<sup>[2]</sup> |                 Download Links<sup>[3]</sup>                 |
-| :---------------------- | :-------------------------: | :--------------: | :----------------------------------------------------: | :----------------: | :----------------------------------------------------------: |
-| Chinese-LLaMA-Plus-7B  | base model | general 120G |        LLaMA-7B         |        790M        | [[百度]](https://pan.baidu.com/s/1zvyX9FN-WSRDdrtMARxxfw?pwd=2gtr) [[Google]](https://drive.google.com/file/d/1N97m3rBj-rp-J1X8rgRfluyomEscfAq0/view?usp=sharing) <br/>[[🤗HF]](https://huggingface.co/hfl/chinese-llama-plus-lora-7b) [[🤖ModelScope]](https://modelscope.cn/models/ChineseAlpacaGroup/chinese-llama-plus-lora-7b) |
+
 
 ## Usage
 
