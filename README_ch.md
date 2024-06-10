@@ -28,7 +28,10 @@ RCC由一个编码器-解码器框架，编码器与解码器的权重都由大�
 <img src=figures/memory_size.png alt="" width="800">
 
 
-
+## 模型下载
+| 模型名称          |   类型   | 训练数据 | 重构模型 | 大小 |                    下载链接                    |
+| :---------------- | :------: | :------: | :--------------------: | :----------------: | :----------------------------------------------------------: |
+| RCC_Ins_Reconstruction  | 问答模型 & 支持指令重建 | Pile(about 10G),[Pwc](https://huggingface.co/datasets/sggetao/PwC),[hotpot_qa](https://huggingface.co/datasets/hotpotqa/hotpot_qa)  |      原版pythia-1.4B      |        2.8B        |  <br/>[[🤗HF]](https://huggingface.co/fcyp/RCC_Ins_Reconstruction) |
 
 
 ## Usage

@@ -30,6 +30,11 @@ We also addressed the issue of poor model performance when both instructions and
 
 
 
+## model download
+
+| Model                   |            Type             |       Data       |         Required Original Model<sup>[1]</sup>          | Size<sup>[2]</sup> |                 Download Links<sup>[3]</sup>                 |
+| :---------------------- | :-------------------------: | :--------------: | :----------------------------------------------------: | :----------------: | :----------------------------------------------------------: |
+| RCC_Ins_Reconstruction  | QA model & Support instruction reconstruction | [Pile](https://huggingface.co/datasets/EleutherAI/pile)(about 10G),[Pwc](https://huggingface.co/datasets/sggetao/PwC),[hotpot_qa](https://huggingface.co/datasets/hotpotqa/hotpot_qa)  |      原版pythia-1.4B      |        2.8B        |  <br/>[[🤗HF]](https://huggingface.co/fcyp/RCC_Ins_Reconstruction) |
 
 ## Usage
 
