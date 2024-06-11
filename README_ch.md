@@ -1,7 +1,7 @@
 [**🇨🇳中文**](./README_CH.md) | [**🌐English**](./README.md) |
 
 # Recurrent Context Compression: Efficiently Expanding the Context Window of LLM
-[[paper]()]
+[[paper](https://arxiv.org/abs/2406.06110)]
 
 
 ## TL;DR
@@ -13,7 +13,7 @@
 
 ## News
 
-- [2024/6/9] 我们发布了RCC-Pythia-1.4b模型和[论文]()
+- [2024/6/9] 我们发布了RCC-Pythia-1.4b[模型](https://huggingface.co/fcyp)和[论文](https://arxiv.org/abs/2406.06110)
 
 ## Model Overview
 RCC由一个编码器-解码器框架，编码器与解码器的权重都由大型语言模型初始化而来。经过训练的编码器能够将固定长度的上下文信息压缩成更紧凑的形式，指令和普通文本都可以当作上下文进行压缩。当上下文信息超过固定长度时，编码器执行循环压缩并将所有压缩特征向量连接起来。解码器利用压缩特征向量作为历史状态向量的输入，完成最终的文本生成任务。

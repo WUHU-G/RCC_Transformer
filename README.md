@@ -1,7 +1,7 @@
 [**🇨🇳中文**](./README_ch.md) | [**🌐English**](./README.md) |
 
 # Recurrent Context Compression: Efficiently Expanding the Context Window of LLM
-[[paper]()]
+[[paper](https://arxiv.org/abs/2406.06110)]
 
 
 ## TL;DR
@@ -13,7 +13,7 @@ Due to the limitations of the fine-tuning dataset, the model currently only supp
 
 ## News
 
-- [2024/6/9] We released the RCC-Pythia-1.4b model and the [paper]()
+- [2024/6/9] We released the RCC-Pythia-1.4b [model](https://huggingface.co/fcyp) and the [paper](https://arxiv.org/abs/2406.06110)
 
 ## Model Overview
 RCC employs an encoder-decoder framework, with both the encoder and decoder weights initialized from a large language model. The trained encoder compresses fixed-length context information into a more compact form, applicable to both instructions and regular text. When context exceeds the fixed length, the encoder performs cyclic compression and concatenates all compressed feature vectors. The decoder uses these compressed vectors as input for final text generation.
