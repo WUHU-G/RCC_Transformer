@@ -38,6 +38,15 @@ We also addressed the issue of poor model performance when both instructions and
 
 ## Usage
 
+### environment
+### environment
+```bash
+transformers==4.40.2
+safetensors==0.4.1
+torch==2.1.2
+flash-attn==2.5.7
+```
+
 ### Model use Cases
 
 ```bash
@@ -134,5 +143,12 @@ For the decoder, we use a Transformer, allowing access to compressed vectors at 
 If you find RCC useful or relevant to your project and research, please kindly cite our paper:
 
 ```bibtex
-
+@misc{huang2024recurrent,
+      title={Recurrent Context Compression: Efficiently Expanding the Context Window of LLM}, 
+      author={Chensen Huang and Guibo Zhu and Xuepeng Wang and Yifei Luo and Guojing Ge and Haoran Chen and Dong Yi and Jinqiao Wang},
+      year={2024},
+      eprint={2406.06110},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```

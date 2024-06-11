@@ -3,7 +3,6 @@ from transformers import AutoTokenizer#,Qwen2ForCausalLM
 from  model.modeling_mcp2 import  GPTNeoXForCausalLM
 from  transformers import GPTNeoXForCausalLM as GPTNeoXForCausalLM2
 from safetensors.torch import load_file,save_file
-from modeling_rcc_qwen import  Qwen2ForCausalLM as RCC_Qwen2ForCausalLM
 import os
 import json
 

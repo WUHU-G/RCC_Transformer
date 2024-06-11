@@ -19,11 +19,11 @@
 RCC由一个编码器-解码器框架，编码器与解码器的权重都由大型语言模型初始化而来。经过训练的编码器能够将固定长度的上下文信息压缩成更紧凑的形式，指令和普通文本都可以当作上下文进行压缩。当上下文信息超过固定长度时，编码器执行循环压缩并将所有压缩特征向量连接起来。解码器利用压缩特征向量作为历史状态向量的输入，完成最终的文本生成任务。
 同时我们研究了在下游任务中指令与上下文同时被压缩时模型的回答较差这一问题，并提出了指令重建的方法缓解了这一问题。更多信息可以在我们的论文中找到。
 
-**The structure of the encoder and decoder in RCC layer i.**
+**RCC在第i层的解码器和编码器**
 <img src=figures/model_structure.png alt="" width="800">
 
 
-**Memory Consumption of Different Models with Increasing Length. Left: Pythia-1.4b, Right: RCC model using Pythia-1.4b for both encoder and decoder. Both models utilize FlashAttention-2**
+**不同型号内存消耗随长度增加。左:Pythia-1.4b，右:使用Pythia-1.4b作为编码器和解码器的RCC模型。两种模型都使用FlashAttention-2**
 
 <img src=figures/memory_size.png alt="" width="800">
 
@@ -35,6 +35,15 @@ RCC由一个编码器-解码器框架，编码器与解码器的权重都由大�
 
 
 ## Usage
+
+
+### environment
+```bash
+transformers==4.40.2
+safetensors==0.4.1
+torch==2.1.2
+flash-attn==2.5.7
+```
 
 ### Model use Cases
 
@@ -117,7 +126,6 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 **请继续关注我们的最新消息。**
 
 - [x] Updating inference code.
-- [] Updating the training code
 
 
 ## Motivation
@@ -133,5 +141,12 @@ CUDA_VISIBLE_DEVICES=0 python test.py
 如果您发现RCC对您的项目和研究有用或相关，请引用我们的论文:
 
 ```bibtex
-
+@misc{huang2024recurrent,
+      title={Recurrent Context Compression: Efficiently Expanding the Context Window of LLM}, 
+      author={Chensen Huang and Guibo Zhu and Xuepeng Wang and Yifei Luo and Guojing Ge and Haoran Chen and Dong Yi and Jinqiao Wang},
+      year={2024},
+      eprint={2406.06110},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
